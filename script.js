@@ -23,3 +23,24 @@ for (i = 0; i < bikes.length; i++){
 
 }
 console.log(bikeLeggera.name)
+
+
+
+const team = [
+    {
+        name: '11 uomini e una gamba',
+        goals: '0',
+        fouls: '0',
+    },
+    {
+        name: 'Atletico ma non troppo',
+        goals: '0',
+        fouls: '0',
+    },
+    {
+        name: '50 sfumature di Gigi',
+        goals: '0',
+        fouls: '0',
+    }
+]
+Math.floor(Math.random() * 11);
