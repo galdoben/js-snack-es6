@@ -15,7 +15,7 @@ const bikes = [
 ]
 
 let bikeLeggera = bikes[0];
-for (i = 0; i < bikes.length; i++){
+for (let i = 0; i < bikes.length; i++){
     const bike = bikes[i];
     if (bikeLeggera.weight > bike.weight){
         bikeLeggera = bike
@@ -26,7 +26,7 @@ console.log(bikeLeggera.name)
 
 
 
-const team = [
+const teams = [
     {
         name: '11 uomini e una gamba',
         goals: '0',
@@ -43,4 +43,10 @@ const team = [
         fouls: '0',
     }
 ]
-Math.floor(Math.random() * 11);
+
+for (const team of teams){
+    team.goals = Math.floor(Math.random() * 11);
+    team.fouls = Math.floor(Math.random() * 11);
+}
+console.log(teams)
+console.log(teams['name'])
