@@ -1,5 +1,5 @@
 
-const bikes = [
+/*const bikes = [
     {
         name: 'Fast',
         weight: '29',
@@ -24,7 +24,7 @@ for (let i = 0; i < bikes.length; i++){
 }
 console.log(bikeLeggera.name)
 
-
+*/
 
 const teams = [
     {
@@ -42,11 +42,20 @@ const teams = [
         goals: '0',
         fouls: '0',
     }
-]
+] 
 
 for (const team of teams){
     team.goals = Math.floor(Math.random() * 11);
     team.fouls = Math.floor(Math.random() * 11);
 }
-console.log(teams)
-console.log(teams['name'])
+const nuoviTeams = []
+for (let team of teams){
+    const nuovoTeam = {
+        nome: team.name,
+        fouls: team.fouls,
+
+    }
+    nuoviTeams.push(nuovoTeam)
+}
+
+console.log(nuoviTeams)
